@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.models.request_models import GenerateImageVariants
 from app.services.segmentator_factory import get_segmentator
 from app.utils.image_utils import decode_base64_image, encode_image_to_base64
 from io import BytesIO
