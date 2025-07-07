@@ -1,5 +1,7 @@
 import uuid
-from app.segmentator.grounded_segmentator import GroundedSegmentator
+
+from app.segmentators.grounded_segmentator import GroundedSegmentator
+
 
 # Simulación para estructura. Sustituye con la lógica real.
 class GroundingDinoSegmentator(GroundedSegmentator):

@@ -1,6 +1,8 @@
 import uuid
 import numpy as np
-from app.segmentator.grounded_segmentator import GroundedSegmentator
+
+from app.segmentators.grounded_segmentator import GroundedSegmentator
+
 
 class SegmentationToBoundingBoxAdapter(GroundedSegmentator):
     def __init__(self, segmentator: GroundedSegmentator):

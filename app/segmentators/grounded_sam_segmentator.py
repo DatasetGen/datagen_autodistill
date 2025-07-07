@@ -2,7 +2,9 @@ import cv2
 import uuid
 from autodistill.detection import CaptionOntology
 from autodistill_grounded_sam import GroundedSAM
-from app.segmentator.grounded_segmentator import GroundedSegmentator
+
+from app.segmentators.grounded_segmentator import GroundedSegmentator
+
 
 class GroundedSamSegmentator(GroundedSegmentator):
     def __init__(self, labels):
