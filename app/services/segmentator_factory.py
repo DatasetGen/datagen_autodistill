@@ -1,6 +1,5 @@
-from app.segmentator.grounding_sam_segmentator import GroundingSamSegmentator
-from app.segmentator.grounded_dino_segmentator import GroundedDinoSegmentator
-
+from app.segmentators.grounding_sam_segmentator import GroundingSamSegmentator
+from app.segmentators.grounded_dino_segmentator import GroundedDinoSegmentator
 from app.segmentators.segmentation_bbox_adapter import SegmentationToBoundingBoxAdapter
 
 
