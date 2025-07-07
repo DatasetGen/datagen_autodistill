@@ -1,6 +1,6 @@
-from app.segmentators.grounding_sam_segmentator import GroundingSamSegmentator
-from app.segmentators.grounded_dino_segmentator import GroundedDinoSegmentator
-from app.segmentators.segmentation_bbox_adapter import SegmentationToBoundingBoxAdapter
+from ..segmentators.grounding_sam_segmentator import GroundingSamSegmentator
+from ..segmentators.grounded_dino_segmentator import GroundedDinoSegmentator
+from ..segmentators.segmentation_bbox_adapter import SegmentationToBoundingBoxAdapter
 
 
 def get_segmentator(model_name: str, labels):
