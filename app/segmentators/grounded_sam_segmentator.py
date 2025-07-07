@@ -4,7 +4,7 @@ from autodistill.detection import CaptionOntology
 from autodistill_grounded_sam import GroundedSAM
 from app.segmentator.grounded_segmentator import GroundedSegmentator
 
-class GroundingSamSegmentator(GroundedSegmentator):
+class GroundedSamSegmentator(GroundedSegmentator):
     def __init__(self, labels):
         ontology = {label.prompt: label.id for label in labels}
         self.labels = labels

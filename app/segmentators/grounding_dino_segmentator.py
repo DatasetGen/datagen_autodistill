@@ -2,7 +2,7 @@ import uuid
 from app.segmentator.grounded_segmentator import GroundedSegmentator
 
 # Simulación para estructura. Sustituye con la lógica real.
-class GroundedDinoSegmentator(GroundedSegmentator):
+class GroundingDinoSegmentator(GroundedSegmentator):
     def __init__(self, labels):
         self.labels = labels
         self.class_id_to_label = {i: label.id for i, label in enumerate(labels)}
