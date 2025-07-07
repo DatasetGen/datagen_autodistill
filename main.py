@@ -1,13 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.services.segmentator_factory import get_segmentator
-from app.utils.image_utils import decode_base64_image, encode_image_to_base64
 from io import BytesIO
 import uuid
 import numpy as np
 import cv2
 from pydantic import BaseModel
 from typing import List
+
+from app.services.segmentator_factory import get_segmentator
+from app.utils import decode_base64_image, encode_image_to_base64
 
 app = FastAPI()
 
